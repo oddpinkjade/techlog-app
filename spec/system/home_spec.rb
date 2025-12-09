@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Homes', type: :system do
   before do
-    driven_by(:rack_test)
+    #driven_by(:rack_test)
+    #driven_by :selenium_chrome
+    driven_by :selenium_chrome_headless
   end
 
   describe 'トップページの検証' do
